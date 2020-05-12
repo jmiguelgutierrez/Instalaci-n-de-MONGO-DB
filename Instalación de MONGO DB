@@ -88,7 +88,19 @@ A la hora de instalar
  
  Extensiones  LIVE SERVER 5.6.1
                      Open with Live Server
-                     
+         
+              REVEAL IN EXPLORER
+              
+              <script src="./"
+                               
+                        fonts/
+                        img/
+                        <>index.html
+                        js/
+                        styles/
+                        
+              MATERIAL ICON THEME
+              
  Crtl-S para guardar
      main.js
        console.log('¡Hola Mundo!');
@@ -106,4 +118,30 @@ A la hora de instalar
  -- boolean
  -- undefined
  -- null
- 
+ Operadores
+  - Aritmeticos
+         console.log(c++)
+         console.log(++c)
+  - Resto %
+  - Incremento ++
+  - Negación unaria 
+  - Concatenación con el operador +
+  - Operadores de asignación
+  - Asignaciones  -=
+         "        *=
+         "        /=
+         "        %=
+  - Operaciones de asignación
+  - Igual =
+  - Or logico ||
+  - Not !
+
+WebComponents
+- html
+- css
+- javascript
+Eso genera las SingleWebComponents
+
+caniuse.com
+
+<scir
