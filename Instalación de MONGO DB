@@ -63,3 +63,47 @@ localhost es el dominio
          Lógica                    ________        
                                  /________/
  
+ 
+JQuery o libreria de Javascript
+frameworks o entornos de trabajo de Javascript para crear aplicaciones que son:
+ANGULAR
+REACT
+VUE
+
+TypeScript o en tipos
+
+Node JS es un framework especial para desarrollar Javascript en servidores.
+
+JQuery ha perdido fuerza con respecto a ANGULAR, REACT y VUE
+
+Utilizamos para trabajar con archivos html/Javascript y JS la aplicación VISUAL STUDIO CODE
+
+A la hora de instalar  
+
+    - Agregar la acción 'Abrir con Code' archivos de tuplas
+    - Agregar la acción 'Abrir con Code' _________ direct
+    
+ html
+ css
+ 
+ Extensiones  LIVE SERVER 5.6.1
+                     Open with Live Server
+                     
+ Crtl-S para guardar
+     main.js
+       console.log('¡Hola Mundo!');
+       // comentario
+       /*                       */                
+ F12 para refrescar o actualizar
+ 
+ Ctrl-Ç  comenta o descomenta
+ //Tipos de datos
+ Javascript es debilmente tipado
+ 
+ let ciudad: string;  - - -> Declaración en TypeScript
+ -- string o cadena de caracteres
+ -- numbers
+ -- boolean
+ -- undefined
+ -- null
+ 
