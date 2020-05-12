@@ -1,0 +1,107 @@
+Intsalación en Windows
+La instalación de MongoDB en Windows esta en la siguiente ubicación:
+
+Archivos de Programas/MongoDB/Server/4.2/bin
+
+En esta carpeta tenemos los archivos:
+
+mongod: Ejecuta el servidor de MongoDB
+mongo: Ejecuta el shell de Mongo
+Desde el terminal verificamos la versión instalada de Mongo:
+
+$ mongo --version
+MongoDB shell version v4.2.2
+
+
+El almacenamiento fisico de las bases de datos en MongoDB se hace en la carpeta:
+
+C:\data\db
+
+Si copio esa carpeta y la copio en otro ordenador no funcionará, debe hacerse la importación de las bases de datos a través de herramientas.
+
+Concepto de Documento en MongoDB
+Tres ventajas:
+
+Correspondencia con tipos nativos (Objetos JS)
+Los arrays o documentos embebidos reducen las necesidades de joins.
+Esquemas dinámicos permiten polimorfismo
+La base de datos ya no tiene la estructura de la base de datos, se hace desde las clases (Mongoos).
+
+La velocidad de lectura es muy rápida.
+
+BSON (JSON Binario)
+Velocidad de lectura.
+Amplía tipos de JSON BSON Types
+BSON es transparente para el administrador. No comprime tanto comparado con JSON.
+
+Si solo usas JS todos los tipos de BSON sobrarán, pero para entornos como JAVA u otros si son muy útiles.
+
+Limites:
+
+Documento BSON menor a 16 megabytes.
+Documentos anidados o embebidos menor de 100 niveles.
+Documentos, Colecciones y Bases de Datos
+BD Relacional	MongoDB
+Registro	Documento
+Tabla	Colección
+BD	BD
+Ademas tenenos:
+
+Vistas de sólo lectura
+Vistas On-demand
+Campo _id
+Todos los documentos tendrán el campo _id t será único a nivel de colección.
+
+Si el campo _id no es especificado cuando se inserta un documento MongoDB lo añade como un tipo ObjectId.
+
+
+
+La mayoría de los drivers crean el _id de tipo ObjectId si no se especifica. 👹
+
+Restricciones del _id:
+
+Puede ser de cualquier tipo incluso un documento, excepto de tipo array. 👹
+El _id es único a nivel de colección
+¿Permite Objetos con arrays? Vamos a comprobarlo
+
+> use foo
+switched to db foo
+
+> db.clientes.insert({_id: {a:1, b:1}})
+WriteResult({ "nInserted" : 1 })
+
+PERMITIDO
+
+> db.clientes.insert({ _id: [1, 2, 3] })
+WriteResult({
+	"nInserted" : 0,
+	"writeError" : {
+		"code" : 2,
+		"errmsg" : "can't use an array for _id"
+	}
+})
+
+NO PERMITIDO
+
+> db.clientes.insert({ _id: {[1, 2, 3]} })
+2020-02-09T20:44:04.777+0100 E  QUERY    [js] uncaught exception: SyntaxError: missing ] in computed property name :
+@(shell):1:29
+
+SEGÚN PERMITIDO PERO AMI ME MARCA ESTE ERROR
+Arrancar Mongo
+Para arrancar Mongo exitesn varias formas:
+
+mongo es como poner mongo --host localhost --port 27017
+mongo --host
+mongo --host direccion.com --port 8080
+mongo --username <usuario> --password <pass> --authenticationDatabase <nombreBD> --host <direccion> --port <no. puerto>
+Si el password se omite lo pregunta después.
+
+Comandos Básicos.
+cls: Limpia la pantalla
+show dbs: Muestra las BD existentes.
+db: Indica en que BD estoy trabajando
+use <nombre>: Cambiar a otra BD, si no existe la crea.
+use gimnasio: Cambia a la BD gimnasio, si no existe la crea.
+show dbs: Muestra todas las BD existentes, no aparece gimnasio por que no tiene contenido.
+db: Indica que estamos en la BD gimnasio.
