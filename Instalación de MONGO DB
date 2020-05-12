@@ -19,3 +19,47 @@ C:\data\db
 
 Si copio esa carpeta y la copio en otro ordenador no funcionará, debe hacerse la importación de las bases de datos a través de herramientas.
 
+cli: linea de comandos   Shell de MONGO
+
+En el raiz de C:
+ 
+data
+   |_ db
+   
+Levantar el servidor: mongod
+Escucha en el punto 27. Listening 127.0.0.1:27017
+                                     ^        ^       
+                                     |        |       
+                                    IP       puerto
+                                    
+localhost es el dominio
+
+                                      ____________
+                                      ____________
+                                      ____________
+                                            |
+                                            |
+                  Shell de Mongo
+                  Compass GUI
+  show dbs:
+      admin   0.0 GB
+      config  0.0 GB
+      local   0.0 GB
+     
+ Propiedades del sistema       - - - - - >  path  
+ Variables de entorno    path
+                          C:/Program Files/MONGO DB/Server/4.2/bin
+                          
+ Mongo Compass
+ WINDOWS 64 bit. msi
+ 
+ JAVASCRIPT
+ 
+ Los archivos nose compilan unicamente se interpretan.
+ Archivos .js
+ 
+       Servidor                 Url_______
+          .js    <- - - - - -     |  .js  |
+         Lógica                    ________        
+         
+ 
