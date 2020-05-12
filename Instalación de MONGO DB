@@ -144,4 +144,13 @@ Eso genera las SingleWebComponents
 
 caniuse.com
 
-<scir
+<script src="./js/funciones.js"></script>
+// function nombrefuncion (parametros)
+
+// Sintaxis de invocación
+// nombrefuncion (argumentos);
+
+ANGULAR va por la version 9.0
+
+// Callbacks
+// Funciones cuyo otro argumento es otra función.
