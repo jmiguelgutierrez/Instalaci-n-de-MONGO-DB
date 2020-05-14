@@ -154,3 +154,45 @@ ANGULAR va por la version 9.0
 
 // Callbacks
 // Funciones cuyo otro argumento es otra función.
+
+PWA
+   Se descarga directamente desde el navegador.
+   Online/Offline (Guarda en local storage y lo manda el servidor cuando hay datos)
+   
+   Aplicaciones de GOOGLE se realizan como Servidores WEB en el movil
+   
+OBJETOS
+  Representan una identidad
+  
+  1.- Mediante un literal de objeto
+  2.- Mediante una instancia de new Object
+  3.- Mediante función constructora
+  4.- Mediante Clases (ECMA Script 5)
+  
+  Windows Terminal   <-- Extensión
+      - Open in default browser
+      - Open in other browsers
+      
+  BACKEND
+      Paso por valor
+      Paso por referencia  en   Javascript
+      
+  DIFERENCIA ENTRE FRONTED Y BACKEND
+  
+  FRONTED Todo el trabajo en el SW cliente
+  BACKEND Todo el trabajo SW en el servidor
+  
+  https://nodejs.org/es/download
+  Instalación de Nodejs
+  
+  
+  ________________________
+  |   Windows Installer   |
+  |                       |
+  _________________________
+  
+  node --version  ->  v12.14.1
+  npm  --version  ->  6.13.4
+  
+  02_Node
+  >npm init  te crea el archivo package JSON en Node
