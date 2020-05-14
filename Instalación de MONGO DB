@@ -196,3 +196,26 @@ OBJETOS
   
   02_Node
   >npm init  te crea el archivo package JSON en Node
+  
+  entry point: (index.js) app.js
+  C:\Users\manana\documents\02_node> code.
+  
+  app.js
+     Terminal
+        node app
+      
+  nodemon es una paquete de Node.js
+  npm i nodemon --save
+  
+  gitignore
+  1.   /node_modules
+  
+  nodemon app
+  npm start
+  
+  03_Node
+  npm init -y
+  
+  Vamos a hacer un servidor web estático
+  npm i express --save
+  
